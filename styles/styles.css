@@ -1,0 +1,85 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.header,
+.hero {
+    background-color: #1f2937;
+    padding: 24px;
+}
+
+.header {
+    display: flex;
+    gap: 16px;
+    justify-content: space-around;
+}
+
+.left {
+    font-size: 24px;
+    color: #F9FAF8;
+}
+
+.right {
+    display: flex;
+    gap: 32px;
+}
+
+.right a:link, .right a:visited {
+    color: #E5E7EB;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.right a:hover, .right a:active {
+    color: #E5E7EB;
+    text-decoration: underline;
+    font-size: 18px;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 144px;
+}
+
+.lefth {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: baseline;
+}
+
+button {
+    background-color: #3882F6;
+    color: #E5E7EB;
+    border-radius: 10px;
+    padding: 8px;
+}
+
+button a:link, button a:visited {
+    color: #E5E7EB;
+    text-decoration: none;
+}
+
+button a:hover, button a:active {
+    color: #E5E7EB;
+    text-decoration: underline;
+}
+
+.ht {
+    font-size: 48px;
+    font-weight: 900;
+    color: #F9FAF8 ;
+}
+
+.hlt {
+    font-size: 18px;
+    color: #E5E7EB;
+}
