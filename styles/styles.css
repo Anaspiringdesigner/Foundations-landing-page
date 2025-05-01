@@ -83,3 +83,20 @@ button a:hover, button a:active {
     font-size: 18px;
     color: #E5E7EB;
 }
+
+.info {
+    display: flex;
+    padding: 24px;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
