@@ -61,6 +61,8 @@ button {
     color: #E5E7EB;
     border-radius: 10px;
     padding: 8px;
+    border-color: #F9FAF8;
+    border-width: 1px;
 }
 
 button a:link, button a:visited {
@@ -99,4 +101,65 @@ button a:hover, button a:active {
     flex-direction: column;
     align-items: center;
     gap: 16px;
+}
+
+.amfesto {
+    display: flex;
+    flex-direction: column;
+    background-color: #E5E7EB;
+    padding: 24px;
+    align-items: center;
+    gap: 16px;
+}
+
+.festo {
+    font-size: 36px;
+    font-style: italic;
+    color: #1f2937;
+}
+
+.me {
+    display: flex;
+    margin-left: 40%;
+}
+
+.csmb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+}
+
+.csm {
+    display: flex;
+    justify-content: space-around;
+    padding: 24px;
+    width: 950px;
+    background-color: #3882F6;
+    border-radius: 15px;
+}
+
+.supp {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.hcsm {
+    color: #F9FAF8;
+    font-size: 24px;
+}
+
+.lcsm {
+    color: #F9FAF8;
+    font-size: 18px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    height: 10vh;
+    align-items: center;
+    background-color: #1f2937;
+    color: #F9FAF8;
 }
