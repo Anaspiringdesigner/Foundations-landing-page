@@ -1,23 +1,54 @@
+/* Beginning declaration to set the margins, padding, and box sizing to the below. It is for convenience */
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
+/* Setting the global font for the whole page. */
+
 body {
     font-family: 'Roboto', sans-serif;
 }
 
+/* Setting the width of the top level flex containers so that they occupy the whole screen width */
+
+.topp,
+.infot,
+.amfestob,
+.csmb,
+.footer {
+    width: 100vw;
+}
+
+/* Setting the second level containers width to 75% of the total width */
+
 .header,
-.hero {
+.hero,
+.info,
+.amfesto,
+.csm {
+    width: 75vw;
+}
+
+/* The header declarations */
+/* The header begins */
+
+.topp {
     background-color: #1f2937;
     padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+/* row 1 of the header begins */
 
 .header {
     display: flex;
     gap: 16px;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .left {
@@ -42,9 +73,11 @@ body {
     font-size: 18px;
 }
 
+/* row 2 of the header begins */
+
 .hero {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     padding-top: 144px;
 }
 
@@ -52,13 +85,14 @@ body {
     width: 300px;
     display: flex;
     flex-direction: column;
-    gap: 16px;
-    align-items: baseline;
+    gap: 32px;
+    align-items: flex-start;
 }
 
 .mage img {
-    width: 600px;
+    width: 500px;
     height: auto;
+    border-radius: 20px;
 }
 
 button {
@@ -91,14 +125,29 @@ button a:hover, button a:active {
     color: #E5E7EB;
 }
 
+/* The information box declarations */
+/* The info box begins */
+
+.infot {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.infohead {
+    display: flex;
+    padding: 24px;
+    font-size: 36px;
+    color: #1f2937;
+    font-weight: 900;
+}
+
 .info {
     display: flex;
     padding: 24px;
     gap: 16px;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    padding-top: 100px;
-    padding-bottom: 100px;
 }
 
 .box {
@@ -106,16 +155,36 @@ button a:hover, button a:active {
     flex-direction: column;
     align-items: center;
     gap: 16px;
+    width: 160px;
+}
+
+.box img {
+    width: 160px;
+    height: auto;
+    border-radius: 10px;
+    border: 5px solid, chartreuse;
+}
+
+.subt {
+    text-align: center;
+}
+
+/* Artist Manifesto begins! */
+
+.amfestob {
+    display: flex;
+    background-color: #E5E7EB;
+    align-items: center;
+    justify-content: center;
 }
 
 .amfesto {
     display: flex;
     flex-direction: column;
-    background-color: #E5E7EB;
     padding: 24px;
-    align-items: center;
     gap: 16px;
     height: 30vh;
+    width: 75vw;
     justify-content: center;
 }
 
@@ -123,13 +192,14 @@ button a:hover, button a:active {
     font-size: 36px;
     font-style: italic;
     color: #1f2937;
-    width: 800px;
 }
 
 .me {
     display: flex;
-    margin-left: 40%;
+    margin-left: auto;
 }
+
+/* Fundraising starts */
 
 .csmb {
     display: flex;
@@ -141,10 +211,11 @@ button a:hover, button a:active {
 .csm {
     display: flex;
     justify-content: space-between;
-    padding: 24px;
-    width: 800px;
+    width: 75vw;
     background-color: #3882F6;
     border-radius: 15px;
+    align-items: baseline;
+    padding: 24px;
 }
 
 .supp {
