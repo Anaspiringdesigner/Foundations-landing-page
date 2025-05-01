@@ -56,6 +56,11 @@ body {
     align-items: baseline;
 }
 
+.mage img {
+    width: 600px;
+    height: auto;
+}
+
 button {
     background-color: #3882F6;
     color: #E5E7EB;
@@ -110,12 +115,15 @@ button a:hover, button a:active {
     padding: 24px;
     align-items: center;
     gap: 16px;
+    height: 30vh;
+    justify-content: center;
 }
 
 .festo {
     font-size: 36px;
     font-style: italic;
     color: #1f2937;
+    width: 800px;
 }
 
 .me {
@@ -132,9 +140,9 @@ button a:hover, button a:active {
 
 .csm {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 24px;
-    width: 950px;
+    width: 800px;
     background-color: #3882F6;
     border-radius: 15px;
 }
